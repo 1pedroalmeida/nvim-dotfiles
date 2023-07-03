@@ -1,0 +1,36 @@
+vim.g.mapleader = " "
+
+local keymap = vim.keymap
+
+keymap.set('i', 'jk', '<ESC>')
+
+keymap.set('n', '<leader>ff', ':Telescope find_files<CR>')
+keymap.set('n', '<leader>fw', ':Telescope live_grep<cr>')
+keymap.set('n', '<leader>fb', ':Telescope buffers<cr>')
+
+keymap.set('n', '<leader>.', ":sp term://powershell.exe -nologo<CR>")
+
+--netrw mappings
+keymap.set('n', '<C-n>', ':Ex<cr>')
+
+vim.api.nvim_create_autocmd('filetype', {
+  pattern = 'netrw',
+  desc = 'Better mappings for netrw',
+  callback = function()
+    local bind = function(lhs, rhs)
+      vim.keymap.set('n', lhs, rhs, {remap = true, buffer = true})
+    end 
+
+    -- edit new file
+    bind('a', '%')
+
+    -- rename file
+    bind('r', 'R')
+
+    -- delete file
+    bind('d', '<del>')
+
+    -- make a directory
+    bind('D', 'd')
+  end
+})
