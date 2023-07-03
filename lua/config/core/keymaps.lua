@@ -9,6 +9,7 @@ keymap.set('n', '<leader>fw', ':Telescope live_grep<cr>')
 keymap.set('n', '<leader>fb', ':Telescope buffers<cr>')
 
 keymap.set('n', '<leader>.', ":sp term://powershell.exe -nologo<CR>")
+keymap.set('n', '<leader>n', ":vs <bar> :Ex<CR>")
 
 --netrw mappings
 keymap.set('n', '<C-n>', ':Ex<cr>')
@@ -19,7 +20,7 @@ vim.api.nvim_create_autocmd('filetype', {
   callback = function()
     local bind = function(lhs, rhs)
       vim.keymap.set('n', lhs, rhs, {remap = true, buffer = true})
-    end 
+    end
 
     -- edit new file
     bind('a', '%')

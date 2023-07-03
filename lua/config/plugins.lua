@@ -21,12 +21,6 @@ vim.cmd([[
 return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
 
-  -- use 'bluz71/vim-nightfly-colors'
-
-  -- use { "ellisonleao/gruvbox.nvim" }
-  
-  use 'tomasiser/vim-code-dark'
-
   use {
       'nvim-telescope/telescope.nvim', tag = '0.1.2',
       -- or                            , branch = '0.1.x',
