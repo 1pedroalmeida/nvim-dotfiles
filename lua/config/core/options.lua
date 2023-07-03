@@ -4,7 +4,8 @@ local opt = vim.opt
 opt.relativenumber = true
 opt.number = true
 
-opt.guicursor = ""
+opt.signcolumn = "yes"
+opt.scrolloff = 8
 
 opt.wrap = false
 
@@ -26,6 +27,7 @@ opt.softtabstop = 4
 opt.shiftwidth = 4
 opt.expandtab = true
 
---netrw config
+-- netrw config
 vim.g.netrw_keepdir = 0
 vim.g.netrw_banner = 0
+

@@ -5,6 +5,7 @@ require('config.plugins.telescope')
 require('config.plugins.lsp')
 require('config.plugins.comment')
 require('config.plugins.lualine')
+require('config.plugins.gitsigns')
 
 -- colorscheme
 vim.cmd('colorscheme habamax')
