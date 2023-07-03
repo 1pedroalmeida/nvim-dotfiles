@@ -1,30 +1,3 @@
---
--- require('telescope').setup{
---   defaults = {
---     -- ...
---     borderchars = {
---           prompt = Util.generate_borderchars(
---             "thick",
---             nil,
---             { top = "█", top_left = "█", left = "█", right = " ", top_right = " ", bottom_right = " " }
---           ),
---           results = Util.generate_borderchars(
---             "thick",
---             nil,
---             { top = "█", top_left = "█", right = " ", top_right = " ", bottom_right = " " }
---           ),
---           preview = Util.generate_borderchars("thick", nil, { top = "█", top_left = "█", top_right = "█" }),
---         },
---   },
---   pickers = {
---     find_files = {
---       theme = "ivy",
---     }
---   },
---   extensions = {
---     -- ...
---   }
--- }
 require('telescope').setup {
    defaults = {
      preview = false,

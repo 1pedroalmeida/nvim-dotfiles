@@ -1,4 +1,4 @@
-local opt = vim.opt 
+local opt = vim.opt
 
 -- line numbers
 opt.relativenumber = true
@@ -6,13 +6,13 @@ opt.number = true
 
 opt.guicursor = ""
 
-opt.wrap = false 
+opt.wrap = false
 
 opt.ignorecase = true
 opt.smartcase = true
 
 opt.termguicolors = true
--- opt.background = "dark"
+opt.background = "dark"
 
 opt.clipboard:append("unnamedplus")
 
