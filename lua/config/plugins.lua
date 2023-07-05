@@ -66,6 +66,8 @@ use {
 
     use 'lewis6991/gitsigns.nvim'
 
+    use 'sainnhe/gruvbox-material'
+
 if packer_bootstrap then
     require('packer').sync()
 end

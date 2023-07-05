@@ -9,10 +9,17 @@ keymap.set('n', '<leader>fw', ':Telescope live_grep<cr>')
 keymap.set('n', '<leader>fb', ':Telescope buffers<cr>')
 
 keymap.set('n', '<leader>.', ":sp term://powershell.exe -nologo<CR>")
-keymap.set('n', '<leader>n', ":vs <bar> :Ex<CR>")
+
+-- buffers
+keymap.set('n', '<leader>x', ':close<CR>')
+keymap.set('n', '<left>', '<C-w>h')
+keymap.set('n', '<right>', '<C-w>l')
+keymap.set('n', '<up>', '<C-w>k')
+keymap.set('n', '<down>', '<C-w>j')
 
 --netrw mappings
 keymap.set('n', '<C-n>', ':Ex<cr>')
+keymap.set('n', '<leader>n', ":vs <bar> :Ex<CR>")
 
 vim.api.nvim_create_autocmd('filetype', {
   pattern = 'netrw',

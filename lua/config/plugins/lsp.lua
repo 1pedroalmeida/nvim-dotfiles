@@ -20,7 +20,7 @@ cmp.setup({
     {name = 'luasnip', keyword_length = 2},
   },
   mapping = {
-    ['<CR>'] = cmp.mapping.confirm({select = true}),
+    ['<Tab>'] = cmp.mapping.confirm({select = true}),
     ['<C-Space>'] = cmp.mapping.complete(),
     ['<C-f>'] = cmp_action.luasnip_jump_forward(),
     ['<C-b>'] = cmp_action.luasnip_jump_backward(),

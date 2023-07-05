@@ -8,4 +8,7 @@ require('config.plugins.lualine')
 require('config.plugins.gitsigns')
 
 -- colorscheme
-vim.cmd('colorscheme habamax')
+vim.cmd('colorscheme gruvbox-material')
+
+-- custom commands
+vim.cmd('command DenoFmt exec ":! deno fmt %:t"')
