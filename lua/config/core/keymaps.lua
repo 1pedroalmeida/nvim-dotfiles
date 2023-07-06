@@ -19,7 +19,7 @@ keymap.set('n', '<down>', '<C-w>j')
 
 --netrw mappings
 keymap.set('n', '<C-n>', ':Ex<cr>')
-keymap.set('n', '<leader>n', ":vs <bar> :Ex<CR>")
+keymap.set('n', '<leader>n', ":Vexplore!<CR>")
 
 vim.api.nvim_create_autocmd('filetype', {
   pattern = 'netrw',
