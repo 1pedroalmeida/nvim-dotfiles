@@ -1,8 +1,8 @@
+<h1 align="center">Neovim config files</h1>
+
 <p align="center">
   <img src="https://github.com/1pedroalmeida/nvim-dotfiles/blob/main/screenshot.png" alt="screenshot">
 </p>
-
-<h1 align="center">Neovim config files</h1>
 
 ## Installation (Windows)
 ```
@@ -24,21 +24,21 @@ $ nvim +PackerSync
 
 ## Custom keymaps
 
-<leader> is set to space key
+\<leader\> is set to space key
 
 | Keymap | Mode | Description |
 | ------ | ------ | ------ |
-| <C-n> | normal | Open netrw on project dir |
-| <S-n> | normal | Open netrw on project dir on a split window |
-| <leader>. | normal | Open powershell terminal on a split window |
-| <leader>ff | normal | Open telescope's find_files fuzzy finder |
-| <leader>fw | normal | Open telescope's live_grep fuzzy finder |
-| <leader>fb | normal | Open telescope's buffers fuzzy finder |
-| <leader>x | normal | Close current buffer |
-| <left> | normal | Focus on buffer to the left |
-| <right> | normal | Focus on buffer to the right |
-| <up> | normal | Focus on buffer to the top |
-| <down> | normal | Focus on buffer to the bottom |
-| jk | insert | Leave insert mode |
-| gcc | normal | Comment out current line |
-| gc | visual/v-line | Comment out selected region |
+| `\<C-n\>` | normal | Open netrw on project dir |
+| `\<S-n\>` | normal | Open netrw on project dir on a split window |
+| `\<leader\>.` | normal | Open powershell terminal on a split window |
+| `\<leader\>ff` | normal | Open telescope's find_files fuzzy finder |
+| `\<leader\>fw` | normal | Open telescope's live_grep fuzzy finder |
+| `\<leader\>fb` | normal | Open telescope's buffers fuzzy finder |
+| `\<leader\>x` | normal | Close current buffer |
+| `\<left\>` | normal | Focus on buffer to the left |
+| `\<right\>` | normal | Focus on buffer to the right |
+| `\<up\>` | normal | Focus on buffer to the top |
+| `\<down\>` | normal | Focus on buffer to the bottom |
+| `jk` | insert | Leave insert mode |
+| `gcc` | normal | Comment out current line |
+| `gc` | visual/v-line | Comment out selected region |
