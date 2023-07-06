@@ -1,7 +1,7 @@
 <h1 align="center">Neovim config files</h1>
 
 <p align="center">
-  <img src="https://github.com/1pedroalmeida/nvim-dotfiles/blob/main/screenshot.png" alt="screenshot">
+  <img src="https://github.com/1pedroalmeida/nvim-dotfiles/blob/main/image.png" alt="image">
 </p>
 
 ## Installation (Windows)
