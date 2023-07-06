@@ -64,9 +64,20 @@ use {
     requires = { 'nvim-tree/nvim-web-devicons', opt = true }
 }
 
-    use 'lewis6991/gitsigns.nvim'
+use 'lewis6991/gitsigns.nvim'
 
-    use 'sainnhe/gruvbox-material'
+use 'sainnhe/gruvbox-material'
+
+use {
+    "ahmedkhalf/project.nvim",
+    config = function()
+        require("project_nvim").setup {
+            -- your configuration comes here
+            -- or leave it empty to use the default settings
+            -- refer to the configuration section below
+        }
+    end
+}
 
 if packer_bootstrap then
     require('packer').sync()
