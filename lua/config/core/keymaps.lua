@@ -36,7 +36,7 @@ vim.api.nvim_create_autocmd('filetype', {
     bind('r', 'R')
 
     -- delete file
-    bind('d', '<del>')
+    bind('dd', '<del>')
 
     -- make a directory
     bind('D', 'd')

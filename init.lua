@@ -11,4 +11,4 @@ require('config.plugins.gitsigns')
 vim.cmd('colorscheme gruvbox-material')
 
 -- custom commands
-vim.cmd('command DenoFmt exec ":! deno fmt %:t"')
+vim.cmd('command DenoFmt exec ":! deno fmt %:p"')
